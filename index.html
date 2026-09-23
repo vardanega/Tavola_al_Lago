@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tavola al Lago — cucina italiana contemporanea nel cuore di Lecco.">
+  <title>Tavola al Lago — Lecco</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231d2b24'/%3E%3Cpath d='M18 39c10-3 18-12 27-22-1 14-8 26-22 29' fill='none' stroke='%23e5b66e' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Tavola al Lago, home"><span>Tavola</span><strong>al Lago</strong></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+    <nav id="navigation" aria-label="Navigazione principale">
+      <a href="#storia">La cucina</a><a href="#menu">Menu</a><a href="#visita">Contatti</a><a class="nav-cta" href="#prenota">Prenota</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" role="img" aria-label="Tavola apparecchiata in un ristorante italiano contemporaneo"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Lecco · Lago di Como</p>
+        <h1 id="hero-title">Cucina contemporanea,<br><em>vista lago.</em></h1>
+        <p class="hero-intro">Cucina italiana contemporanea e una sala raccolta con vista sul lungolago.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#prenota">Prenota un tavolo</a><a class="text-link" href="#menu">Scopri il menu <span aria-hidden="true">↘</span></a></div>
+      </div>
+      <div class="service-note"><span>Pranzo</span> 11:00–14:00 <i></i><span>Cena</span> 19:00–23:00</div>
+    </section>
+
+    <section class="story" id="storia">
+      <div class="section-number">01</div>
+      <div class="story-copy"><p class="eyebrow dark">La nostra cucina</p><h2>Radici lombarde.<br>Istinto contemporaneo.</h2><p>Partiamo da prodotti riconoscibili e stagionali. Li lavoriamo con tecnica, misura e rispetto, lasciando che ogni ingrediente mantenga il proprio carattere.</p><a class="text-link dark-link" href="#menu">Esplora i piatti <span aria-hidden="true">→</span></a></div>
+      <figure class="story-image"><img src="https://images.unsplash.com/photo-1603570416072-84068a0f1358?auto=format&fit=crop&fm=jpg&q=85&w=1600" alt="Tagliatelle italiane con funghi porcini" loading="lazy"><figcaption>Pasta fresca, preparata ogni mattina.</figcaption></figure>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="menu-intro"><div><p class="eyebrow">Menu stagionale</p><h2 id="menu-title">Dalla cucina</h2></div><p>Una selezione essenziale che cambia con il mercato e con le stagioni.</p></div>
+      <div class="menu-tabs" role="tablist" aria-label="Categorie del menu"><button class="active" type="button" role="tab" aria-selected="true" data-category="primi">Primi</button><button type="button" role="tab" aria-selected="false" data-category="secondi">Secondi</button><button type="button" role="tab" aria-selected="false" data-category="dolci">Dolci</button><button type="button" role="tab" aria-selected="false" data-category="vini">Vini</button></div>
+      <div class="dishes" id="dishes" aria-live="polite"></div>
+      <p class="menu-note">Il menu è dimostrativo. Ingredienti e prezzi sono parte del concept. Per allergie o intolleranze, richiedere la lista completa degli allergeni al personale.</p>
+    </section>
+
+    <section class="reservation" id="prenota">
+      <div class="reservation-copy"><p class="eyebrow">Il tuo tavolo</p><h2>Una sera sul lago.</h2><p>Seleziona data, orario e numero di ospiti. La richiesta viene confermata immediatamente in questa dimostrazione.</p><div class="contact-line"><span>Per gruppi da 7 persone</span><a href="mailto:gruppi@example.com">Richiesta dedicata →</a></div></div>
+      <form id="reservation-form">
+        <label>Data<input type="date" name="date" required></label>
+        <label>Orario<select name="time" required><option value="">Seleziona</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option></select></label>
+        <label>Ospiti<select name="guests" required><option value="">Seleziona</option><option>2 persone</option><option>3 persone</option><option>4 persone</option><option>5 persone</option><option>6 persone</option></select></label>
+        <button class="button button-gold" type="submit">Verifica disponibilità</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </section>
+
+    <section class="visit" id="visita">
+      <div class="visit-photo" role="img" aria-label="Sala intima di un ristorante italiano"></div>
+      <div class="visit-info"><p class="eyebrow dark">Vieni a trovarci</p><h2>Nel cuore di Lecco.</h2><div class="visit-grid"><div><h3>Indirizzo</h3><p>Via Roma 00<br>23900 Lecco LC</p><small>Indirizzo dimostrativo</small></div><div><h3>Orari</h3><p>Mar–Dom<br>11:00–14:00<br>19:00–23:00</p></div><div><h3>Contatti</h3><p><a href="mailto:prenotazioni@tavolaallago.example">prenotazioni@tavolaallago.example</a></p><small>Nessun contatto telefonico</small></div></div><a class="button button-outline" href="https://maps.google.com/?q=Lecco+Italy" target="_blank" rel="noreferrer">Apri la mappa</a></div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#top"><span>Tavola</span><strong>al Lago</strong></a><p>Concept project · UI design & front-end development</p><a href="#top">Torna su ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
